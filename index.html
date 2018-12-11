@@ -18,12 +18,17 @@
 
 <body>
     <!-- Header -->
-    <div class="hero-section">
-        <div class="hero-section-text">
-            <h1>Michelle Brytowski</h1>
-            <h5>Junior Web Developer</h5>
+    <header class="subnav-hero-section">
+        <h1 class="subnav-hero-headline">Michelle Brytowski</h1>
+        <div>
+            <h5 class="subnav-hero-headline"><small>Junior Web Developer</small></h5>
         </div>
-    </div>
+        <ul class="subnav-hero-subnav">
+            <li><a href="#" class="aboutButton">About</a></li>
+            <li><a href="#" class="portfolioButton">Portfolio</a></li>
+            <li><a href="#" class="contactButton">Contact</a></li>
+        </ul>
+    </header>
     <!-- Side bar -->
     <!-- You can add more icons at http://fontawesome.io/icons/#brand -->
     <ul class="sticky-social-bar">
@@ -47,43 +52,57 @@
         </li>
     </ul>
     <!-- About -->
-    <div class="card">
+    <div class="card aboutCard">
         <div class="card-section">
-            <h1>About</h1>
+            <h1 class="separator-center">About</h1>
+            <hr>
             <p></p>
         </div>
     </div>
 
     <!-- Portfolio card -->
-    <div class="card">
+    <div class="card portfolioCard">
         <div class="card-section">
-            <h1>Portfolio</h1>
+            <h1 class="separator-left">Portfolio</h1>
+            <hr>
             <div class="grid-container">
                 <div class="grid-x grid-padding-x small-up-2 medium-up-3">
                     <div class="cell">
                         <div class="card">
-                            <img src="assets/img/generic/rectangle-1.jpg">
+                            <img src="./assets/images/TrailHeadZ.png">
                             <div class="card-section">
                                 <h4>TrailHeadz</h4>
                                 <p>Search for hiking trails and join the discussion!</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="cell">
-                        <div class="card">
-                            <img src="assets/img/generic/rectangle-1.jpg">
-                            <div class="card-section">
-                                <h4>Train Scheduler</h4>
-                                <p>Check what rides are available or create your own!</p>
+                            <div class="card-user-profile-actions">
+                                <a href="https://michaelsingarayar.github.io/Group-Project-1/" class="card-user-profile-button button hollow">Site</a>
+                                <a href="https://github.com/MichaelSingarayar/Group-Project-1" class="card-user-profile-button button hollow secondary">Code</a>
                             </div>
                         </div>
                     </div>
                     <div class="cell">
                         <div class="card">
-                            <img src="assets/img/generic/rectangle-1.jpg">
+                            <img src="">
+                            <div class="card-section">
+                                <h4>Train Scheduler</h4>
+                                <p>Check what rides are available or create your own!</p>
+                            </div>
+                            <div class="card-user-profile-actions">
+                                <a href="https://mbrytowski.github.io/Train_Scheduler/" class="card-user-profile-button button hollow">Site</a>
+                                <a href="https://github.com/MBrytowski/Train_Scheduler" class="card-user-profile-button button hollow secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card">
+                            <img src="./assets/images/GIFTastic.png">
                             <div class="card-section">
                                 <h4>GIF Search</h4>
                                 <p>Choose GIFs from the buttons listed or create your own from your favorite TV show!</p>
+                            </div>
+                            <div class="card-user-profile-actions">
+                                <a href="https://mbrytowski.github.io/GifTastic/" class="card-user-profile-button button hollow">Site</a>
+                                <a href="https://github.com/MBrytowski/GifTastic" class="card-user-profile-button button hollow secondary">Code</a>
                             </div>
                         </div>
                     </div>
@@ -92,28 +111,40 @@
             <div class="grid-x grid-padding-x small-up-2 medium-up-3">
                 <div class="cell">
                     <div class="card">
-                        <img src="assets/img/generic/rectangle-1.jpg">
+                        <img src="">
                         <div class="card-section">
                             <h4>Trivia Game</h4>
                             <p>Take this quiz of random questions.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/img/generic/rectangle-1.jpg">
-                        <div class="card-section">
-                            <h4>Guess the Letter</h4>
-                            <p>The program chooses a random letter. Try to guess it!</p>
+                        <div class="card-user-profile-actions">
+                            <a href="" class="card-user-profile-button button hollow">Site</a>
+                            <a href="" class="card-user-profile-button button hollow secondary">Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell">
                     <div class="card">
-                        <img src="assets/img/generic/rectangle-1.jpg">
+                        <img src="">
+                        <div class="card-section">
+                            <h4>Guess the Letter</h4>
+                            <p>The program chooses a random letter. Try to guess it!</p>
+                        </div>
+                        <div class="card-user-profile-actions">
+                            <a href="" class="card-user-profile-button button hollow">Site</a>
+                            <a href="" class="card-user-profile-button button hollow secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card">
+                        <img src="">
                         <div class="card-section">
                             <h4>Crystal Game</h4>
                             <p>Click on the crystals and try to match the random number!</p>
+                        </div>
+                        <div class="card-user-profile-actions">
+                            <a href="" class="card-user-profile-button button hollow">Site</a>
+                            <a href="" class="card-user-profile-button button hollow secondary">Code</a>
                         </div>
                     </div>
                 </div>
@@ -122,15 +153,22 @@
     </div>
 
     <!-- Contact -->
-    <div class="card">
+    <div class="card contactCard">
         <div class="card-section">
-            <h1>Contact</h1>
-            <p></p>
+            <h1 class="text-underline">Contact</h1>
+            <hr>
+            
         </div>
     </div>
 
 
 
+
+    <footer class="social-footer">
+        <div class="container">
+            <span class="text-align-center">Copyright ©</span>
+        </div>
+    </footer>
 
 
 

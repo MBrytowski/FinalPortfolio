@@ -2,16 +2,26 @@ body {
     background-color: darkgray;
 }
 
-h1, h4, h5, p {
+h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a,
+h4,
+h5,
+p,
+span {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 /*Header*/
-.hero-section {
+
+.subnav-hero-section {
+    text-align: center;
     background: url("../images/Trail\ Pic4.jpg") 50% no-repeat;
     background-size: cover;
-    height: 30vh;
-    text-align: center;
+    position: relative;
+    overflow: visible;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -21,12 +31,45 @@ h1, h4, h5, p {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    height: 200px;
 }
 
-.hero-section .hero-section-text {
+.subnav-hero-section .subnav-hero-headline {
     color: #fefefe;
-    text-shadow: 1px 1px 2px #0a0a0a;
-    font-family: 'Nanum Gothic', sans-serif;
+    margin: 5px;
+}
+
+.subnav-hero-subnav {
+    float: none;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+}
+
+.subnav-hero-subnav li {
+    float: none;
+    display: inline-block;
+}
+
+.subnav-hero-subnav li a {
+    padding: 0.9rem 1rem;
+    font-size: 0.75rem;
+    color: #fefefe;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.35s ease-in-out;
+}
+
+.subnav-hero-subnav li a.is-active {
+    background: rgba(254, 254, 254, 0.15);
+}
+
+.subnav-hero-subnav li a:hover {
+    background: rgba(254, 254, 254, 0.15);
 }
 
 /*Social bar*/
@@ -111,3 +154,47 @@ h1, h4, h5, p {
 }
 
 /* Portfolio card */
+.card-user-profile-actions {
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    padding: 1rem;
+    background: #e6e6e6;
+    background: #fefefe;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-user-profile-actions> :last-child {
+    margin-bottom: 0;
+}
+
+.card-user-profile-button {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 0;
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+
+}
+
+.card-user-profile-button+.card-user-profile-button {
+    margin-left: 1rem;
+}
+
+/* Footer */
+
+.social-footer {
+    padding: 1rem;
+    background: #8a8a8a;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: center;
+}
