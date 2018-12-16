@@ -7,6 +7,7 @@ h1 {
 }
 
 a,
+h3,
 h4,
 h5,
 p,
@@ -148,9 +149,18 @@ span {
     background-color: inherit;
 }
 
+.cardMain {
+    background-image: url("../images/dust_scratches.png");
+}
+
 /* About card */
 .card {
-    margin: 10px 40px 10px 40px;
+    margin: 20px 40px 10px 40px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.button {
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* Portfolio card */
@@ -183,6 +193,65 @@ span {
     margin-left: 1rem;
 }
 
+/* .cardImage {
+    height: 250px;
+    width: 325px;
+} */
+
+/* Contact card */
+
+.translucent-form-overlay {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    color: #fefefe;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.translucent-form-overlay .columns.row {
+    display: block;
+}
+
+.translucent-form-overlay h3,
+.translucent-form-overlay label {
+    color: #fefefe;
+}
+
+.translucent-form-overlay input,
+.translucent-form-overlay select {
+    color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+    color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+    color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+    color: #8a8a8a;
+}
+
+.portfolio-resume-contact-info {
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-resume-contact-info a {
+    color: #0a0a0a;
+}
+
+.portfolio-resume-contact-info .fa {
+    font-size: 1.4rem;
+    padding-right: 0.8rem;
+    vertical-align: middle;
+    color: #0a0a0a;
+}
+
+
+
 /* Footer */
 
 .social-footer {
@@ -197,4 +266,5 @@ span {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: center;
+    margin: 100px 0 0 0;
 }
